@@ -9,8 +9,6 @@
 import UIKit
 
 struct Bar {
-   
-    
     let color: UIColor
     let percentage: CGFloat
     
@@ -19,7 +17,6 @@ struct Bar {
         let colorRandom: UIColor = randomColor.randomElement() ?? .white
         
         return Bar(color: colorRandom, percentage: percentageRandom)
-        
     }
     
     
