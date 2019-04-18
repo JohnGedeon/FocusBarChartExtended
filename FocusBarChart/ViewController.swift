@@ -11,8 +11,13 @@ import UIKit
 
 class ViewController: UIViewController {
     
-  
     var stackView = UIStackView(arrangedSubviews: [])
+    // this creates a stackView with an empty array of view
+    // the arrangedSubviews once populated with views will include
+    // them in its internal arrangedSubviews array and its subviews.
+    // Calling removeFromSuperView() on one of these views will remove
+    // it from the arrangedSubviews and subviews hierarchy.
+    
     
     let barChartData = [
         Bar(color: .green, percentage: 0.3),
@@ -29,13 +34,6 @@ class ViewController: UIViewController {
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Remove 1", style: .plain, target: self, action: #selector(removeView))
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add 1", style: .plain, target: self, action: #selector(addView))
-        
-        // this creates a stackView with an empty array of view
-        // the arrangedSubviews once populated with views will include
-        // them in its internal arrangedSubviews array and its subviews.
-        // Calling removeFromSuperView() on one of these views will remove
-        // it from the arrangedSubviews and subviews hierarchy.
-      
 
         barChartData.forEach{ bar in
             let cornerRadius: CGFloat = 4.0
