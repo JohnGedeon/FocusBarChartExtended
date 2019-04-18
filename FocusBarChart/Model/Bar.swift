@@ -18,8 +18,7 @@ struct Bar {
         
         return Bar(color: colorRandom, percentage: percentageRandom)
     }
-    
-    
+
     static let randomColor: [UIColor] = [
         .black,.darkGray,.lightGray,.white,.gray,
         .red,.green,.blue,.cyan,.yellow,

@@ -10,23 +10,25 @@
 		241F8A6E2267256400656C8C /* UIView+Anchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241F8A6D2267256300656C8C /* UIView+Anchors.swift */; };
 		241F8A70226883EE00656C8C /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241F8A6F226883EE00656C8C /* Bar.swift */; };
 		241F8A7222688D8200656C8C /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241F8A7122688D8200656C8C /* BarView.swift */; };
+		241F8A742268A08D00656C8C /* FocusBarChartVC+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241F8A732268A08D00656C8C /* FocusBarChartVC+Extension.swift */; };
 		3643D2BBBE6C66095F9855A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3643D69DFA62A4CD4EB66805 /* Main.storyboard */; };
 		3643D5E8D5C35B5C173F3954 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3643DBECD8F66E0B657AA35D /* Assets.xcassets */; };
 		3643D63E6D9E4FB2BC90CFBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3643D7884563AF9F9B275636 /* AppDelegate.swift */; };
 		3643D6D01485BDE11E2B87AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3643D51CEECE3C686893F464 /* LaunchScreen.storyboard */; };
-		3643D7CC616EB1320CB86BE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3643DD770F8D049B3F85F668 /* ViewController.swift */; };
+		3643D7CC616EB1320CB86BE7 /* FocusBarChartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3643DD770F8D049B3F85F668 /* FocusBarChartVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		241F8A6D2267256300656C8C /* UIView+Anchors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Anchors.swift"; sourceTree = "<group>"; };
 		241F8A6F226883EE00656C8C /* Bar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bar.swift; sourceTree = "<group>"; };
 		241F8A7122688D8200656C8C /* BarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
+		241F8A732268A08D00656C8C /* FocusBarChartVC+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FocusBarChartVC+Extension.swift"; sourceTree = "<group>"; };
 		3643D2F884C211AC008BAF6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3643D4031E4EB620786EE128 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		3643D76CB0960D1BF05736AD /* FocusBarChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FocusBarChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3643D7884563AF9F9B275636 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3643DBECD8F66E0B657AA35D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3643DD770F8D049B3F85F668 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3643DD770F8D049B3F85F668 /* FocusBarChartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusBarChartVC.swift; sourceTree = "<group>"; };
 		3643DE800168952665DB4A1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,17 +43,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		241F8A752268A20E00656C8C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				241F8A6F226883EE00656C8C /* Bar.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		241F8A762268A21D00656C8C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3643DD770F8D049B3F85F668 /* FocusBarChartVC.swift */,
+				241F8A732268A08D00656C8C /* FocusBarChartVC+Extension.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		241F8A772268A24300656C8C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				241F8A6D2267256300656C8C /* UIView+Anchors.swift */,
+				241F8A7122688D8200656C8C /* BarView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		3643D357D331D91DC9E4C522 /* FocusBarChart */ = {
 			isa = PBXGroup;
 			children = (
 				3643D4031E4EB620786EE128 /* Info.plist */,
 				3643D51CEECE3C686893F464 /* LaunchScreen.storyboard */,
 				3643D7884563AF9F9B275636 /* AppDelegate.swift */,
-				241F8A6F226883EE00656C8C /* Bar.swift */,
-				3643DD770F8D049B3F85F668 /* ViewController.swift */,
-				241F8A6D2267256300656C8C /* UIView+Anchors.swift */,
+				241F8A752268A20E00656C8C /* Model */,
+				241F8A772268A24300656C8C /* View */,
+				241F8A762268A21D00656C8C /* Controllers */,
 				3643D69DFA62A4CD4EB66805 /* Main.storyboard */,
-				241F8A7122688D8200656C8C /* BarView.swift */,
 			);
 			path = FocusBarChart;
 			sourceTree = "<group>";
@@ -143,8 +170,9 @@
 			files = (
 				3643D63E6D9E4FB2BC90CFBF /* AppDelegate.swift in Sources */,
 				241F8A70226883EE00656C8C /* Bar.swift in Sources */,
+				241F8A742268A08D00656C8C /* FocusBarChartVC+Extension.swift in Sources */,
 				241F8A6E2267256400656C8C /* UIView+Anchors.swift in Sources */,
-				3643D7CC616EB1320CB86BE7 /* ViewController.swift in Sources */,
+				3643D7CC616EB1320CB86BE7 /* FocusBarChartVC.swift in Sources */,
 				241F8A7222688D8200656C8C /* BarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
